@@ -13,16 +13,9 @@ section{padding:40px 20px;text-align:center}
 h2{font-size:26px;color:#667eea}
 p{font-size:18px;line-height:2;max-width:700px;margin:15px auto}
 
-/* السلايد */
-.slider{max-width:600px;margin:20px auto;position:relative;overflow:hidden;border-radius:15px}
-.slides{display:flex;animation:slide 40s infinite}
-.slides img{width:100%;flex-shrink:0}
-@keyframes slide{
-0%{transform:translateX(0%)} 10%{transform:translateX(-100%)} 20%{transform:translateX(-200%)}
-30%{transform:translateX(-300%)} 40%{transform:translateX(-400%)} 50%{transform:translateX(-500%)}
-60%{transform:translateX(-600%)} 70%{transform:translateX(-700%)} 80%{transform:translateX(-800%)}
-90%{transform:translateX(-900%)} 100%{transform:translateX(0%)}
-}
+/* شبكة الصور */
+.gallery{display:grid;grid-template-columns:1fr 1fr;gap:10px;max-width:600px;margin:20px auto}
+.gallery img{width:100%;height:200px;object-fit:cover;border-radius:10px}
 
 .donate{background:#f5f5f5;padding:30px;border-radius:15px;max-width:500px;margin:0 auto;text-align:center}
 .account{background:#fff; border:2px dashed #ff6b35; padding:12px; border-radius:10px; margin:10px 0; font-size:18px; font-weight:bold; direction:ltr}
@@ -41,39 +34,22 @@ footer{background:#333;color:white;text-align:center;padding:15px}
 <h2>من نحن</h2>
 <p>نحنا نساعد أطفال غزة ونرسم البسمه علي وجه أطفال غزة رغم الجرح والألم وفقدان الاهل والأقارب وهدم المنازل رغم الوجع الكبير</p>
 
-<!-- سلايد 10 صور -->
-<div class="slider">
-<div class="slides">
-<img src="https://images.unsplash.com/photo-1488521787991-28d59a1a15d6?q=80&w=1170" alt="اطفال غزة 1">
-<img src="https://images.unsplash.com/photo-1593113598332-cd288d649433?q=80&w=1170" alt="اطفال غزة 2">
-<img src="https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?q=80&w=1213" alt="اطفال غزة 3">
-<img src="https://images.unsplash.com/photo-1532629345422-7515e3e7af6a?q=80&w=1170" alt="اطفال غزة 4">
-<img src="https://images.unsplash.com/photo-1469571486292-0ba58a3f068b?q=80&w=1170" alt="اطفال غزة 5">
-<img src="https://images.unsplash.com/photo-1488521787991-28d59a1a15d6?q=80&w=1170" alt="اطفال غزة 6">
-<img src="https://images.unsplash.com/photo-1593113598332-cd288d649433?q=80&w=1170" alt="اطفال غزة 7">
-<img src="https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?q=80&w=1213" alt="اطفال غزة 8">
-<img src="https://images.unsplash.com/photo-1532629345422-7515e3e7af6a?q=80&w=1170" alt="اطفال غزة 9">
-<img src="https://images.unsplash.com/photo-1469571486292-0ba58a3f068b?q=80&w=1170" alt="اطفال غزة 10">
-</div>
+<!-- 10 صور شبكة -->
+<div class="gallery">
+<img src="https://images.unsplash.com/photo-1488521787991-28d59a1a15d6?q=80&w=400" alt="اطفال غزة 1">
+<img src="https://images.unsplash.com/photo-1593113598332-cd288d649433?q=80&w=400" alt="اطفال غزة 2">
+<img src="https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?q=80&w=400" alt="اطفال غزة 3">
+<img src="https://images.unsplash.com/photo-1532629345422-7515e3e7af6a?q=80&w=400" alt="اطفال غزة 4">
+<img src="https://images.unsplash.com/photo-1469571486292-0ba58a3f068b?q=80&w=400" alt="اطفال غزة 5">
+<img src="https://images.unsplash.com/photo-1488521787991-28d59a1a15d6?q=80&w=400" alt="اطفال غزة 6">
+<img src="https://images.unsplash.com/photo-1593113598332-cd288d649433?q=80&w=400" alt="اطفال غزة 7">
+<img src="https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?q=80&w=400" alt="اطفال غزة 8">
+<img src="https://images.unsplash.com/photo-1532629345422-7515e3e7af6a?q=80&w=400" alt="اطفال غزة 9">
+<img src="https://images.unsplash.com/photo-1469571486292-0ba58a3f068b?q=80&w=400" alt="اطفال غزة 10">
 </div>
 <p style="font-size:14px; color:#666;">الصور تعبر عن معاناة أطفال غزة في الخيام</p>
 </section>
 
 <section>
 <div class="donate">
-<h2>للتبرع</h2>
-<p><b>واتساب:</b> 0592416137</p>
-<p><b>اسم البنك:</b> بنك أوروبا - بلجيكا</p>
-<p><b>اسم المستفيد:</b> YOUNIS ABUDRAZ</p>
-<p><b>رقم الحساب IBAN:</b></p>
-<div class="account">BE14738055063383</div>
-<p style="font-size:14px; color:#666;">بعد التحويل ابعتلنا صورة الحوالة على الواتساب</p>
-</div>
-</section>
-
-<footer>
-<p>© 2026 يوني للتبرعات - غزة</p>
-</footer>
-
-</body>
-</html>
+<h2>للتبرع</h2
