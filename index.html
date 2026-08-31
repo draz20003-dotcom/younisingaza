@@ -6,44 +6,31 @@
     <title>يوني للتبرعات - YOUNIS GAZA</title>
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
-        body { font-family: 'Segoe UI', Arial; }
+        body { font-family: 'Segoe UI', Tahoma, Arial; background: #fff; }
         header { 
             background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
             color: white; text-align: center; padding: 100px 20px; min-height: 100vh;
-            display: flex; flex-direction: column; justify-content: center;
+            display: flex; flex-direction: column; justify-content: center; align-items: center;
         }
         h1 { font-size: 40px; margin-bottom: 15px; }
+        header p { font-size: 20px; margin-bottom: 30px; }
         .btn { 
             background: #25D366; color: white; padding: 18px 50px; 
             border-radius: 50px; text-decoration: none; font-size: 20px;
             font-weight: bold; display: inline-block; margin-top: 20px;
+            box-shadow: 0 4px 15px rgba(37, 211, 102, 0.4);
         }
         section { padding: 60px 20px; text-align: center; }
         h2 { font-size: 32px; color: #667eea; margin-bottom: 20px; }
         section p { font-size: 21px; line-height: 2.2; max-width: 750px; margin: 0 auto 30px; }
-
-        /* كود المعرض */
-        .gallery {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 20px;
-            max-width: 1200px;
-            margin: 30px auto 0;
-            padding: 0 20px;
+        .about-img { 
+            width: 90%; 
+            max-width: 450px; 
+            border-radius: 15px; 
+            box-shadow: 0 5px 20px rgba(0,0,0,0.3);
+            margin-top: 20px;
         }
-        .gallery img {
-            width: 100%;
-            height: 300px;
-            object-fit: cover;
-            border-radius: 15px;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
-            transition: transform 0.3s;
-        }
-        .gallery img:hover {
-            transform: scale(1.05);
-        }
-
-        footer { background: #333; color: white; text-align: center; padding: 20px; }
+        footer { background: #333; color: white; text-align: center; padding: 20px; font-size: 16px; }
     </style>
 </head>
 <body>
@@ -56,19 +43,12 @@
     <section>
         <h2>من نحن</h2>
         <p>نحنا نساعد أطفال غزة ونرسم البسمه علي وجه أطفال غزة رغم الجرح والألم وفقدان الاهل والأقارب وهدم المنازل رغم الوجع الكبير</p>
-        
-        <!-- هنا كل الصور -->
-        <div class="gallery">
-            <img src="child.jpg" alt="طفل من غزة">
-            <img src="child2.jpg" alt="طفل من غزة">
-            <img src="child3.jpg" alt="طفل من غزة">
-            <img src="child4.jpg" alt="طفل من غزة">
-        </div>
+        <img src="child.jpg" alt="طفل من غزة" class="about-img">
     </section>
 
     <section style="background: #f5f5f5;">
         <h2>كيف تتبرع</h2>
-        <p>تقدر تتبرع عن طريق التواصل معنا على واتساب. كل تبرع بيوصل لمستحقيه مباشرة.</p>
+        <p>تقدر تتبرع عن طريق التواصل معنا على واتساب. كل تبرع بيوصل لمستحقيه مباشرة بدون وسيط.</p>
     </section>
 
     <section>
@@ -77,8 +57,7 @@
     </section>
 
     <footer>
-        <p>© 2026 يوني للتبرعات - YOUNIS GAZA</p>
+        <p>© 2026 يوني للتبرعات - YOUNIS GAZA. كل الحقوق محفوظة</p>
     </footer>
 </body>
 </html>
-<img src="child.jpg" alt="طفل من غزة" style="width:90%; max-width:400px; border-radius:15px; margin-top:20px;">
