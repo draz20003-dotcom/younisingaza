@@ -115,3 +115,18 @@ document.getElementById('visitorCount').innerText = localStorage.getItem('visito
   </script>
 </body>
 </html>
+<!-- عداد الزوار الحقي -->
+<div style="text-align:center; padding:20px; background:#f0f0f0;">
+<p style="font-size:18px; color:#667eea; font-weight:bold;">
+👥 Visitors: 
+<span id="visitorCount">0</span>
+</p>
+</div>
+
+<script>
+fetch('https://api.countapi.xyz/hit/younisgaza/visits')
+.then(res => res.json())
+.then(data => {
+  document.getElementById('visitorCount').innerText = data.value;
+})
+</script>
